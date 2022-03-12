@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -q parallel24
+#PBS -l select=1:ncpus=24:mpiprocs=24:mem=45GB
+#PBS -j oe
+#PBS -N spilling_com
+
+cd $PBS_O_WORKDIR
+np=$(cat ${PBS_NODEFILE}|wc -l);
+
+source $HOME/OpenFOAM/OpenFOAM-v1812/etc/bashrc
+decomposePar
+mpirun -np ${np} -hostfile ${PBS_NODEFILE} compressibleWave -parallel > log
+reconstructPar
+
