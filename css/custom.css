@@ -540,3 +540,65 @@ figure {
 	background-color: #333;
 	color: #fff;
 }
+
+
+/**
+ * 11.0 - Media Query
+ */
+
+ @media (max-width: 991px) {
+	.main-nav a {
+		margin-right: 20px;
+	}
+
+	#header-search-box {
+		position: absolute;
+		right: 20px;
+	}
+}
+
+@media (max-width: 767px) {
+	#header-search-box {
+		right: 20px;
+		top: 9px;
+	}
+
+	.main-nav {
+		margin-top: 2px;
+	}
+
+	.btn-5 span {
+    	display: none;
+	}
+
+	.btn-5b:before {
+	    left: 0;
+	}
+}
+
+@media (max-width: 431px) {
+	.logo h1 {
+		margin-top: 8px;
+		font-size: 24px;
+	}
+
+	.post {
+		background: #fff;
+		padding: 0 10px 0;
+	}
+
+	.more-link {
+		font-size: 0.9em;
+		line-height: 100%;
+	}
+}
+
+@media screen and (max-height: 30.5em) {
+	.overlay nav {
+		height: 70%;
+		font-size: 34px;
+	}
+	.overlay ul li {
+		min-height: 34px;
+	}
+}
