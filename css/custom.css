@@ -1,29 +1,22 @@
-
-
-/**
- * Table of Contents
- *
- * 1.0 - Google Font
- * 2.0 - General Elements
- * 3.0 - Site Header
- *   3.1 - Logo
- *   3.2 - Main Navigation
- *     3.2.1 - Main Nav CSS 3 Hover Effect
- * 4.0 - Home/Blog
- *   4.1 - Read More Button CSS 3 style
- * 5.0 - Widget
- * 6.0 - Footer
- * 7.0 - Header Search Bar
- * 8.0 - Mobile Menu
- * 9.0 - Contact Page Social
- * 10.0 - Contact Form
- * 11.0 - Media Query
+/*!
+ * Font Awesome Free 6.3.0 by @fontawesome - https://fontawesome.com
+ * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
+ * Copyright 2023 Fonticons, Inc.
  */
-
-/**
- * 1.0 - Google Font
- */
-
+ :root, :host {
+	--fa-style-family-classic: 'Font Awesome 6 Free';
+	--fa-font-solid: normal 900 1em/1 'Font Awesome 6 Free'; }
+  
+  @font-face {
+	font-family: 'Font Awesome 6 Free';
+	font-style: normal;
+	font-weight: 900;
+	font-display: block;
+	src: url("../webfonts/fa-solid-900.woff2") format("woff2"), url("../webfonts/fa-solid-900.ttf") format("truetype"); }
+  
+  .fas,
+  .fa-solid {
+	font-weight: 900; }
 
 @import url(http://fonts.useso.com/css?family=Lato:300,400);
 @import url(http://fonts.useso.com/css?family=Ubuntu:300,400);
@@ -353,7 +346,7 @@ figure {
 .widget-recent-posts ul {
     padding: 0;
     margin: 0;
-    padding-left: 20px;
+    padding-left: 25px;
 }
 
 .widget-recent-posts ul li {
@@ -364,35 +357,12 @@ figure {
 }
 
 .widget-recent-posts ul li::before {
-    content: '\f3d3';
-    font-family: "Ionicons";
-    position: absolute;
-    left: -17px;
-    top: 3px;
-    font-size: 16px;
-    color: #000;
-}
-
-.widget-archives ul {
-    padding: 0;
-    margin: 0;
-    padding-left: 25px;
-}
-
-.widget-archives ul li {
-    list-style-type: none;
-    position: relative;
-    line-height: 170%;
-    margin-bottom: 10px;
-}
-
-.widget-archives ul li::before {
-    content: '\f3f3';
-    font-family: "Ionicons";
+    content: '\f35a';
+    font-family: "Font Awesome 6 Free";
     position: absolute;
     left: -25px;
     top: 1px;
-    font-size: 16px;
+    font-size: 18px;
     color: #000;
 }
 
@@ -410,8 +380,8 @@ figure {
 }
 
 .widget-category ul li::before {
-    content: '\f3fe';
-    font-family: "Ionicons";
+    content: '\f35a';
+    font-family: "Font Awesome 6 Free";
     position: absolute;
     left: -25px;
     top: 1px;
