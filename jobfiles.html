@@ -21,10 +21,9 @@
 	    <script src="js/bootstrap.min.js"></script>
 	    <script src="js/pace.min.js"></script>
 	    <script src="js/modernizr.custom.js"></script>
-		
 	</head>
 
-	<body>
+	<body id="single">
 		<div class="container">	
 			<header id="site-header">
 				<div class="row">
@@ -35,6 +34,12 @@
 					</div><!-- col-md-4 -->
 					<div class="col-md-8 col-sm-7 col-xs-4">
 						<nav class="main-nav" role="navigation">
+							<div class="navbar-header">
+  								<button type="button" id="trigger-overlay" class="navbar-toggle">
+    								<span class="ion-navicon"></span>
+  								</button>
+							</div>
+
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
   								<ul class="nav navbar-nav navbar-right">
     								<li class="cl-effect-11"><a href="index.html" data-hover="Home">Home</a></li>
@@ -52,57 +57,24 @@
 		<div class="content-body">
 			<div class="container">
 				<div class="row">
-					<main class="col-md-8">
+					<main class="col-md-12">
 						<article class="post post-1">
 							<header class="entry-header">
-								<h1 class="entry-title">
-									<a>Fully-coupled hydroelastic modeling of a deformable wall in waves</a>
-								</h1>
+								<h1 class="entry-title">OpenFOAM job file for NUS and NSCC HPC</h1>
 								<div class="entry-meta">
-									<span class="post-author"><a>Zhengyu Hu, Luofeng Huang, Yuzhu Li</a></span>
-									<span class="post-date"><a>January 2023</a></span>
-									<span class="post-category"><a>Coastal Engineering</a></span>
+									<span class="post-date"><a>February 2023</a></span>
 								</div>
 							</header>
 							<div class="entry-content clearfix">
-								<figure class="img-responsive-center">
-									<img class="img-responsive" src="img/j.coastaleng.2022.104245.jpg" alt="Developer Image">
-								</figure>
-								<div class="read-more cl-effect-14">
-									<a href="https://doi.org/10.1016/j.coastaleng.2022.104245" class="more-link">Continue reading <span class="meta-nav">→</span></a>
-								</div>
+								<li>
+									<a href="Dicts/job.pbs">NUS HPC</a>
+								</li>
+								<li>
+									<a href="Dicts/good.pbs">NSCC HPC</a>
+								</li>			
 							</div>
 						</article>
-
 					</main>
-					<aside class="col-md-4">
-						<div class="widget widget-recent-posts">		
-							<h3 class="widget-title">Recent Posts</h3>		
-							<ul>
-								<li>
-									<a href="generateMesh.html">Generate 2D mesh by snappyHexMesh</a>
-								</li>
-								<li>
-									<a href="jobfiles.html">OpenFOAM job file for NUS and NSCC HPC</a>
-								</li>
-								<li>
-									<a href="https://github.com/huzhengyu/wave2solids">Fully-coupled WSI model</a>
-								</li>
-							</ul>
-						</div>
-
-						<div class="widget widget-category">		
-							<h3 class="widget-title">Category</h3>		
-							<ul>
-								<li>
-									<a href="work.html">Wave-structure-seabed interactions</a>
-								</li>
-								<li>
-									<a href="#">Nature-based solutions</a>
-								</li>
-							</ul>
-						</div>
-					</aside>
 				</div>
 			</div>
 		</div>
@@ -115,6 +87,19 @@
 				</div>
 			</div>
 		</footer>
+
+		<!-- Mobile Menu -->
+		<div class="overlay overlay-hugeinc">
+			<button type="button" class="overlay-close"><span class="fa-solid fa-bars"></span></button>
+			<nav>
+				<ul>
+					<li><a href="index.html">Home</a></li>
+					<li><a href="work.html">Work</a></li>
+					<li><a href="blog.html">Blog</a></li>
+					<li><a href="about.html">About</a></li>
+				</ul>
+			</nav>
+		</div>
 
 		<script src="js/script.js"></script>
 

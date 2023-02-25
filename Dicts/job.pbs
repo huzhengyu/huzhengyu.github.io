@@ -1,0 +1,14 @@
+#!/bin/bash
+#PBS -q parallel12
+#PBS -l select=2:ncpus=12:mpiprocs=12:mem=36GB
+#PBS -j oe
+#PBS -N LAP
+
+cd $PBS_O_WORKDIR
+np=$(cat ${PBS_NODEFILE}|wc -l);
+
+source $HOME/foam/foam-extend-4.0/etc/bashrc
+mpirun -np ${np} -hostfile ${PBS_NODEFILE} solids4Foam -parallel > log.solids4Foam
+
+
+

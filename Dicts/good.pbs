@@ -1,0 +1,17 @@
+#!/bin/bash
+#PBS -l select=1:ncpus=24:mpiprocs=24:mem=45GB
+#PBS -l walltime=24:00:00
+#PBS -P ProjectID
+#PBS -j oe
+#PBS -N jobName
+
+cd $PBS_O_WORKDIR
+np=$(cat ${PBS_NODEFILE}|wc -l);
+
+source $HOME/OpenFOAM/OpenFOAM-v1812/etc/bashrc
+
+decomposePar
+mpirun -np ${np} -hostfile ${PBS_NODEFILE} compressibleWave -parallel > log
+reconstructPar
+
+
