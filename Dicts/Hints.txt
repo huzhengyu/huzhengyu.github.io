@@ -1,0 +1,12 @@
+->foam-extend-3.1
+module load cmake/3.9.3
+module load gsl-1.13
+openmpi/1.6.5 (self-installed)
+gcc/4.8.5 (default)
+
+->foam-extend-4.0
+./etc/bashrc SYSTEMOPENMPI -> OPENMPI
+openmpi/1.8.8 (self-installed)
+
+->OpenFOAM-v1812/v1912
+Compile ThirdParty -> OpenFOAM
