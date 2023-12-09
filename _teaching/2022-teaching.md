@@ -1,7 +1,7 @@
 ---
 title: "Teaching Assistant of Fluid Mechanics"
 collection: teaching
-type: "Workshop"
+type: "Undergraduate course"
 permalink: /teaching/2022-teaching
 venue: "National University of Singapore, Civil and Environmental Engineering"
 date: 2022-08-01
