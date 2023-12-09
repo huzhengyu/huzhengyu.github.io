@@ -11,9 +11,8 @@ redirect_from:
 
 Education
 ======
-* B.S. in GitHub, GitHub University, 2012
-* M.S. in Jekyll, GitHub University, 2014
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
+* M.E. in Port, Coastal, and Offshore Engineering, Zhejiang Univeristy, 2018-2021
+* Ph.D in Civil Engineering, National University of Singapore, 2021-2025 (expected)
 
 Work experience
 ======
