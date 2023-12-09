@@ -10,4 +10,4 @@ location: "Hangzhou, China"
 
 I worked with Prof. Fang He to give lab tutorials to 60+ undergraduate students. Experiments include interaction between waves and vertical caisson/sloping breakwater/Pile.
 
-<div align=center><img src="http://huzhengyu.github.io/images/breakwater.jpg" width = 200></div>
+<div align=center><img src="http://huzhengyu.github.io/images/breakwater.jpg" width = 400></div>
