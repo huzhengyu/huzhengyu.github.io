@@ -13,7 +13,7 @@ Education
 ======
 * M.E. in Port, Coastal, and Offshore Engineering, Zhejiang Univeristy, 2018-2021
 * Ph.D in Civil Engineering, National University of Singapore, 2021-2025 (expected)
-
+{%
 Work experience
 ======
 * Summer 2015: Research Assistant
@@ -25,15 +25,11 @@ Work experience
   * Github University
   * Duties included: Merging pull requests
   * Supervisor: Professor Hub
-  
+%}  
 Skills
 ======
-* Skill 1
-* Skill 2
-  * Sub-skill 2.1
-  * Sub-skill 2.2
-  * Sub-skill 2.3
-* Skill 3
+* Computational fluid dynamics
+* Experimental fluid dynamics
 
 Publications
 ======
@@ -52,7 +48,3 @@ Teaching
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
   {% endfor %}</ul>
-  
-Service and leadership
-======
-* Currently signed in to 43 different slack teams
