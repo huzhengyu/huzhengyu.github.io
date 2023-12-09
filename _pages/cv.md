@@ -16,7 +16,7 @@ Education
 
 Work experience
 ======
-* Summer 2015: Research Assistant
+* 2021-2023: Research Assistant
   * National University of Singapore
   * Duties included: Supervise 4 undergraduate students on Final Year Projects
   * Supervisor: Professor Pearl
