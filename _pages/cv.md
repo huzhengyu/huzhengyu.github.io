@@ -28,8 +28,9 @@ Work experience
 
 Skills
 ======
-* Computational fluid dynamics
-* Experimental fluid dynamics
+* Computational Fluid Dynamics
+* Computational Solid Mechanics
+* Experimental Fluid Dynamics
 
 Publications
 ======
