@@ -1,5 +1,5 @@
 ---
-title: "Teaching Assistant of Fluid MechanicsTeaching Assistant of Fluid Mechanics"
+title: "Teaching Assistant of Fluid Mechanics"
 collection: teaching
 type: "Workshop"
 permalink: /teaching/2022-teaching
