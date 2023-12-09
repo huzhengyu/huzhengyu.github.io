@@ -9,3 +9,5 @@ location: "Singapore"
 ---
 
 I worked with Prof. Yuzhu Li to give lab/assignment tutorials to about 100 undergraduate students.
+
+<div align=center><img src="http://huzhengyu.github.io/images/CE5308.gif" width = 400></div>
