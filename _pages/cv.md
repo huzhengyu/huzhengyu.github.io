@@ -18,12 +18,12 @@ Work experience
 ======
 * Summer 2015: Research Assistant
   * National University of Singapore
-  * Duties included: Supervise 4 undergraduate students on FYP projects
+  * Duties included: Supervise 4 undergraduate students on Final Year Projects
   * Supervisor: Professor Pearl
 
 * 2019-2021: Research Assistant
   * Zhejiang Univeristy
-  * Duties included: Supervise 3 undergraduate students on FYP projects
+  * Duties included: Supervise 3 undergraduate students on Final Year Projects
   * Supervisor: Professor Fang He
 
 Skills
