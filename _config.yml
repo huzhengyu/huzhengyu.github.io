@@ -86,9 +86,9 @@ author:
   location         : "Singapore"
   employer         :
   pubmed           : 
-  googlescholar    : https://www.researchgate.net/profile/Zhengyu-Hu-4/
+  googlescholar    : 
   email            :
-  researchgate     :  # example: "https://www.researchgate.net/profile/yourprofile"
+  researchgate     : "https://www.researchgate.net/profile/Zhengyu-Hu-4"
   uri              :
   bitbucket        :
   codepen          :
