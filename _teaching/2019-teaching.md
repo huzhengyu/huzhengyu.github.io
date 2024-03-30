@@ -3,7 +3,7 @@ title: "Teaching Assistant of Port and Coastal Hydraulic Structures"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2019-teaching
-venue: "Zhejiang University, Ocean college"
+venue: "Ocean college, Zhejiang University"
 date: 2019-09-01
 location: "Hangzhou, China"
 ---

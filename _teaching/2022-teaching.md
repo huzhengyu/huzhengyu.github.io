@@ -3,7 +3,7 @@ title: "Teaching Assistant of Fluid Mechanics AY2022/2023 and AY2023/2024"
 collection: teaching
 type: "Undergraduate course"
 permalink: /teaching/2022-teaching
-venue: "National University of Singapore, Civil and Environmental Engineering"
+venue: "Civil and Environmental Engineering, National University of Singapore"
 date: 2022-08-01
 location: "Singapore"
 ---

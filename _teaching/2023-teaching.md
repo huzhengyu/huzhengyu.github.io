@@ -3,7 +3,7 @@ title: "Teaching Assistant of Sediment Transport and Coastal Protection AY2024/2
 collection: teaching
 type: "Graduate course"
 permalink: /teaching/2023-teaching
-venue: "National University of Singapore, Civil and Environmental Engineering"
+venue: "Civil and Environmental Engineering, National University of Singapore"
 date: 2024-04-01
 location: "Singapore"
 ---
