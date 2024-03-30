@@ -19,12 +19,12 @@ Work experience
 * 2021-2023: Research Assistant
   * National University of Singapore
   * Duties included: Supervise 4 undergraduate students on Final Year Projects
-  * Supervisor: Professor Pearl
+  * Supervisor: Prof. <a href="https://nus-ccl.com/">Yuzhu (Pearl) Li</a>
 
 * 2019-2021: Research Assistant
   * Zhejiang Univeristy
   * Duties included: Supervise 3 undergraduate students on Final Year Projects
-  * Supervisor: Professor Fang He
+  * Supervisor: Prof. Fang He
 
 Skills
 ======
