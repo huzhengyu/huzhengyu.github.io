@@ -8,6 +8,6 @@ date: 2024-04-01
 location: "Singapore"
 ---
 
-I worked with Prof. Yuzhu (Pearl) Li to give lab tutorials to about 20 graduate students.
+I worked with <a href="https://nus-ccl.com/">Prof. Yuzhu (Pearl) Li</a> to give lab tutorials to about 20 graduate students.
 
 <!-- <div align=center><img src="http://huzhengyu.github.io/images/CE5308.gif" width = 400></div> -->
