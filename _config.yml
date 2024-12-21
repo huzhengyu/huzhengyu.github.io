@@ -10,7 +10,7 @@ locale                   : "en-US"
 title                    : "HZY LAB"
 title_separator          : "-"
 name                     : &name "Zhengyu Hu"
-description              : &description "PhD candidate in Coastal Engineering"
+description              : &description "Research Fellow in Coastal Engineering"
 url                      : https://huzhengyu.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "huzhengyu.github.io"
@@ -82,9 +82,9 @@ analytics:
 author:
   name             : "Zhengyu Hu"
   avatar           : "hzy.png"
-  bio              : "PhD candidate in NUS"
+  bio              : "Research Fellow"
   location         : "Singapore"
-  employer         :
+  employer         : "National University of Singapore"
   pubmed           : 
   googlescholar    : #"academicpages"
   email            : "z.hu@u.nus.edu"
