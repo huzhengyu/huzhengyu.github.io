@@ -83,7 +83,7 @@ author:
   name             : "Zhengyu Hu"
   avatar           : "hzy.png"
   bio              : "Research Fellow"
-  location         : "Singapore"
+  location         : #"Singapore"
   employer         : "National University of Singapore"
   pubmed           : 
   googlescholar    : #"academicpages"
