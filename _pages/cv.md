@@ -11,20 +11,15 @@ redirect_from:
 
 Education
 ======
-* M.E. in Port, Coastal, and Offshore Engineering, Zhejiang Univeristy, 2018-2021
+* M.Eng. in Port, Coastal, and Offshore Engineering, Zhejiang Univeristy, 2018-2021
 * Ph.D in Civil Engineering, National University of Singapore, 2021-2025 (expected)
 
 Work experience
 ======
-* 2021-2023: Research Assistant
+* Oct 2024-Present: Research Fellow
   * National University of Singapore
-  * Duties included: Supervise 4 undergraduate students on Final Year Projects
+  * Duties included: Project Manager
   * Supervisor: Prof. <a href="https://nus-ccl.com/">Yuzhu (Pearl) Li</a>
-
-* 2019-2021: Research Assistant
-  * Zhejiang Univeristy
-  * Duties included: Supervise 3 undergraduate students on Final Year Projects
-  * Supervisor: Prof. Fang He
 
 Skills
 ======
