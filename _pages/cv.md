@@ -11,7 +11,7 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Civil Engineering, National University of Singapore, Aug 2021-Jan 2025
+* Ph.D in Civil Engineering, National University of Singapore, Aug 2021-Feb 2025
 * M.Eng. in Port, Coastal, and Offshore Engineering, Zhejiang Univeristy, Sep 2018-Jun 2021
 
 Work experience
