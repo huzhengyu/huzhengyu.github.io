@@ -9,7 +9,11 @@ redirect_from:
 
 {% include base_path %}
 
-Education
+<iframe src="http://huzhengyu.github.io/files/CV_Zhengyu.pdf" width="100%" height="800px" style="border: none;">
+    This browser does not support PDFs. Please download the PDF to view it: 
+    <a href="http://huzhengyu.github.io/files/CV_Zhengyu.pdf">Download PDF</a>.
+</iframe>
+<!-- Education
 ======
 * Ph.D in Civil Engineering, National University of Singapore, Aug 2021-Feb 2025
 * M.Eng. in Port, Coastal, and Offshore Engineering, Zhejiang Univeristy, Sep 2018-Jun 2021
@@ -43,4 +47,4 @@ Teaching
 ======
   <ul>{% for post in site.teaching %}
     {% include archive-single-cv.html %}
-  {% endfor %}</ul>
+  {% endfor %}</ul> -->
