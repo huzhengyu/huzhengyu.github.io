@@ -7,16 +7,25 @@ redirect_from:
   - /about/
   - /about.html
 ---
-About
-======
-Dr. Zhengyu Hu is a Postdoctoral Research Fellow at the Department of Civil and Environmental Engineering, National University of Singapore (NUS). He obtained a Ph.D. in Coastal Engineering in 2025 from the NUS. He specializes in wave-structure-seabed interactions, with research interests spanning hydroelastic wave loading, sediment transport, and tsunami-induced scour. His work integrates advanced experimental and numerical methods to improve the resilience and sustainability of coastal and offshore infrastructure, with a particular focus on understanding seabed response and failure mechanisms under extreme hydrodynamic conditions.
+
+# About
+
+Dr. Zhengyu Hu is a Postdoctoral Research Fellow in the Department of Civil and Environmental Engineering at the National University of Singapore (NUS). He received his Ph.D. in Coastal Engineering from NUS in 2025.
+
+His research focuses on understanding and predicting complex coastal processes through advanced computational and experimental approaches. His expertise spans wave–structure–seabed interactions, hydroelastic wave loading, sediment transport, seabed response, and tsunami-induced scour. By integrating numerical modeling, laboratory experiments, and theoretical analyses, his work seeks to advance the fundamental understanding of coastal hazards and develop physics-based solutions for resilient and sustainable coastal and offshore infrastructure under a changing climate.
+
+His current research interests include multiphysics modeling of coastal systems, nature-based coastal protection, wave–mud interactions, and physics-informed computational methods for next-generation coastal engineering.
 
 ---
-Research Interests 
-======
-* Coastal Engineering
-* Hydroelasticity
-* Sediment Transport and Soil Liquefaction
-* Breaking Waves and Turbulence Modeling
-* Wave-Structure-Seabed Interactions
-* Tsunamis
+
+# Research Interests
+
+- Coastal Engineering
+- Wave–Structure–Seabed Interactions
+- Sediment Transport, Scour, and Seabed Mechanics
+- Hydroelasticity
+- Breaking Waves and Turbulence Modeling
+- Tsunami and Extreme Coastal Hazards
+- Wave–Mud Interactions
+- Nature-Based Coastal Protection
+- Computational Fluid Dynamics (CFD)
