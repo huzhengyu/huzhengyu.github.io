@@ -21,9 +21,6 @@ His research focuses on understanding and predicting complex coastal processes t
 - Coastal Engineering
 - Wave–Structure–Seabed Interactions
 - Sediment Transport, Scour, and Seabed Mechanics
-- Hydroelasticity
 - Breaking Waves and Turbulence Modeling
 - Tsunami and Extreme Coastal Hazards
-- Wave–Mud Interactions
 - Nature-Based Coastal Protection
-- Computational Fluid Dynamics (CFD)
