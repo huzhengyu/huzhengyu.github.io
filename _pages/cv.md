@@ -9,9 +9,9 @@ redirect_from:
 
 {% include base_path %}
 
-<iframe src="http://huzhengyu.github.io/files/CV_Zhengyu.pdf" width="100%" height="800px" style="border: none;">
+<iframe src="https://docs.google.com/viewer?url=https://huzhengyu.github.io/files/CV_Zhengyu.pdf&embedded=true" width="100%" height="800px" style="border: none;">
     This browser does not support PDFs. Please download the PDF to view it: 
-    <a href="http://huzhengyu.github.io/files/CV_Zhengyu.pdf">Download PDF</a>.
+    <a href="https://huzhengyu.github.io/files/CV_Zhengyu.pdf">Download PDF</a>.
 </iframe>
 
 <!-- Education
