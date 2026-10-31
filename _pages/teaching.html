@@ -9,10 +9,13 @@ excerpt: "Teaching assistant roles and student project supervision by Zhengyu Hu
 {% assign items = site.teaching | sort: "date" | reverse %}
 <div class="teach-list">
 {% for post in items %}
-  <article class="teach">
+  <article class="teach{% if post.images %} teach--img{% endif %}">
+    <div class="teach__body">
     <p class="teach__meta"><span class="badge">{{ post.type }}</span> {{ post.venue }}</p>
     <h3 class="teach__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
     <div class="teach__excerpt">{{ post.content }}</div>
+    </div>
+    {% if post.images %}<div class="teach__imgs teach__imgs--{{ post.images.size }}">{% for i in post.images %}<a href="{{ site.baseurl }}/images/{{ i }}" target="_blank" rel="noopener" title="View full size"><img src="{{ site.baseurl }}/images/{{ i }}" alt="" loading="lazy"></a>{% endfor %}</div>{% endif %}
   </article>
 {% endfor %}
 </div>

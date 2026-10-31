@@ -75,6 +75,7 @@ social:
     - "https://scholar.google.com/citations?user=Bc6pJ74AAAAJ"
     - "https://orcid.org/0000-0003-2142-8324"
     - "https://www.researchgate.net/profile/Zhengyu-Hu-4"
+    - "https://www.linkedin.com/in/ceehzy/"
 
 
 # Analytics
@@ -88,7 +89,7 @@ analytics:
 author:
   name             : "Zhengyu Hu"
   avatar           : "hzy.jpg"
-  bio              : "Postdoctoral Research Fellow · Coastal Engineering"
+  bio              : "Postdoctoral Research Fellow<br>Project Manager"
   location         : "Singapore"
   employer         : "National University of Singapore"
   pubmed           : 
@@ -108,7 +109,7 @@ author:
   instagram        :
   impactstory      : #"https://profiles.impactstory.org/u/xxxx-xxxx-xxxx-xxxx"
   lastfm           :
-  linkedin         :
+  linkedin         : "ceehzy"   # LinkedIn username (linkedin.com/in/...)
   orcid            : "https://orcid.org/0000-0003-2142-8324"
   pinterest        :
   soundcloud       :

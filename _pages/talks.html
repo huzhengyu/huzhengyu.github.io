@@ -7,7 +7,6 @@ excerpt: "Conference talks and invited presentations by Zhengyu Hu."
 ---
 
 {% assign talks = site.talks | sort: "date" | reverse %}
-<p class="page__lead">{{ talks.size }} conference talks and presentations.</p>
 
 {% assign by_year = talks | group_by_exp: "t", "t.date | date: '%Y'" %}
 {% for year in by_year %}

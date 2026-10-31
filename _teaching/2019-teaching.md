@@ -6,6 +6,8 @@ permalink: /teaching/2019-teaching
 venue: "Ocean college, Zhejiang University"
 date: 2019-09-01
 location: "Hangzhou, China"
+images:            # photos shown as thumbnails on the Teaching page
+  - "breakwater.jpg"
 ---
 
 I worked with Prof. Fang He to give lab tutorials to 60+ undergraduate students. Experiments include interaction between waves and vertical caisson/sloping breakwater/Pile.

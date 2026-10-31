@@ -6,6 +6,9 @@ permalink: /teaching/2023-teaching
 venue: "Civil and Environmental Engineering, National University of Singapore"
 date: 2024-04-01
 location: "Singapore"
+images:            # photos shown as thumbnails on the Teaching page
+  - "IncipientSedimentMotion.jpg"
+  - "SandRipples.jpg"
 ---
 
 I worked with Prof. <a href="https://nus-ccl.com/">Yuzhu (Pearl) Li</a> to give lab tutorials to about 20 graduate students.

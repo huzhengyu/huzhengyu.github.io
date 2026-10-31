@@ -7,7 +7,7 @@ excerpt: "Journal publications by Zhengyu Hu on coastal engineering, breaking wa
 ---
 
 {% assign pubs = site.publications | sort: "date" | reverse %}
-<p class="page__lead">{{ pubs.size }} peer-reviewed journal articles. {% if site.author.googlescholar %}See also my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a> for citations.{% endif %} <span class="muted"><strong class="pub__me">{{ site.author_highlight }}</strong> marks my name.</span></p>
+<p class="page__lead">Selected journal articles. See my <a href="{{ site.author.googlescholar }}">Google Scholar profile</a> for full publications.</p>
 
 {% assign by_year = pubs | group_by_exp: "p", "p.date | date: '%Y'" %}
 {% for year in by_year %}
