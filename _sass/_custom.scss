@@ -248,3 +248,44 @@ body.has-modal { overflow: hidden; }
   video { width: 100%; }
   figcaption { font-family: $sans-serif; }
 }
+
+/* ---- Awards & service -------------------------------------------------- */
+ol.awards { list-style: none; margin: 1em 0 2em; padding: 0; }
+.award { display: grid; grid-template-columns: 7em 1fr; gap: 1em; padding: .9em 0; margin: 0; border-bottom: 1px dashed $card-border;
+  &:last-child { border-bottom: 0; }
+}
+.award__date { color: $accent; font-weight: 700; font-size: .9em; padding-top: .1em; font-variant-numeric: tabular-nums; }
+.award__title { margin: 0 0 .2em; font-size: 1em; line-height: 1.4; border: 0 !important; padding: 0 !important;
+  i { color: #c8921a; margin-right: .2em; }
+}
+.award__meta { margin: 0; font-size: .88em; color: #4b5563; }
+.award__amount { font-weight: 600; color: $text-color; }
+
+.service-role { display: flex; align-items: baseline; gap: .8em; padding: 1em 1.2em; margin: 1em 0; border: 1px solid $card-border; border-radius: $radius;
+  .badge { flex: none; }
+  p { margin: 0; font-size: .95em; }
+}
+.reviews { margin: 1em 0 2em; padding: 1.1em 1.2em; border: 1px solid $card-border; border-radius: $radius; }
+.reviews__head { display: flex; flex-wrap: wrap; align-items: baseline; justify-content: space-between; gap: .3em 1em; margin-bottom: .8em;
+  h3 { margin: 0; font-size: 1em; i { color: $accent; margin-right: .3em; } }
+}
+.reviews__summary { margin: 0; font-size: .9em; font-weight: 600; color: $accent; }
+.reviews__list { list-style: none; margin: 0; padding: 0;
+  li { display: grid; grid-template-columns: minmax(0, 20em) 1fr 2.5em; align-items: center; gap: .8em; margin: 0; padding: .3em 0; font-size: .88em; }
+}
+.reviews__journal { font-style: italic; color: #374151; }
+.reviews__bar { height: 8px; border-radius: 4px; background: #f1f5f9; overflow: hidden;
+  span { display: block; height: 100%; border-radius: 4px; background: linear-gradient(90deg, mix(#fff, $accent, 40%), $accent); }
+}
+.reviews__count { text-align: right; font-weight: 700; font-variant-numeric: tabular-nums; color: $text-color; }
+
+@media (max-width: 600px) {
+  .award { grid-template-columns: 1fr; gap: .2em; }
+  .reviews__list li { grid-template-columns: 1fr 2.5em; }
+  .reviews__bar { grid-column: 1 / -1; grid-row: 2; }
+  .service-role { flex-direction: column; gap: .4em; }
+}
+.reviews h3 { margin: 0 0 .8em; font-size: 1em; i { color: $accent; margin-right: .3em; } }
+ul.journal-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5em;
+  li { margin: 0; padding: .35em .8em; border-radius: 999px; background: $accent-soft; color: $text-color; font-size: .85em; font-style: italic; }
+}

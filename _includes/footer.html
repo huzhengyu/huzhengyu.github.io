@@ -1,14 +1,5 @@
 {% include base_path %}
-{% assign a = site.author %}
-<div class="page__footer-follow">
-  <ul class="footer-links">
-    {% if a.email %}<li><a href="mailto:{{ a.email }}"><i class="fas fa-fw fa-envelope" aria-hidden="true"></i> Email</a></li>{% endif %}
-    {% if a.googlescholar %}<li><a href="{{ a.googlescholar }}"><i class="fas fa-fw fa-graduation-cap" aria-hidden="true"></i> Google Scholar</a></li>{% endif %}
-    {% if a.orcid %}<li><a href="{{ a.orcid }}"><i class="ai ai-orcid ai-fw" aria-hidden="true"></i> ORCID</a></li>{% endif %}
-    {% if a.researchgate %}<li><a href="{{ a.researchgate }}"><i class="fab fa-fw fa-researchgate" aria-hidden="true"></i> ResearchGate</a></li>{% endif %}
-  </ul>
-</div>
 <div class="page__footer-copyright">
-  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }} · Last updated {{ site.time | date: '%B %Y' }}
+  &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}
   {% if site.visitor_counter %}<span class="footer-counter"><img src="https://www.easycounter.com/counter.php?huzhengyu" alt="" width="80" height="15" loading="lazy"> unique visitors since August 2023</span>{% endif %}
 </div>

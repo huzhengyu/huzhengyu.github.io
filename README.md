@@ -52,6 +52,8 @@ docker run --rm -it -v "${PWD}:/srv/jekyll" -p 4000:4000 jekyll/jekyll:4 \
 | Publications | one file per paper in `_publications/` |
 | Talks | one file per talk in `_talks/` |
 | Teaching | `_teaching/` |
+| Awards & honours | `_data/awards.yml` |
+| Session chair, journals reviewed for | `_data/service.yml` |
 | CV PDF | replace `files/CV_Zhengyu.pdf` (keep the name) |
 | Menu items | `_data/navigation.yml` |
 | Colours, fonts, layout | `_sass/_variables.scss` (colours) and `_sass/_custom.scss` (everything else) |

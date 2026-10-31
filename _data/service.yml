@@ -1,0 +1,21 @@
+# Professional service. Shown on /awards/.
+roles:
+  - role: "Session Chair"
+    detail: "Ocean Engineering session, 45th International Conference on Ocean, Offshore and Arctic Engineering (OMAE 2026)"
+
+# Journals I review for (shown in this order)
+reviews:
+  - "Ocean Engineering"
+  - "Coastal Engineering"
+  - "Physics of Fluids"
+  - "Journal of Marine Science and Engineering"
+  - "Water"
+  - "Journal of Ocean Engineering and Marine Energy"
+  - "Journal of Waterway, Port, Coastal, and Ocean Engineering"
+  - "Mathematics"
+  - "Applied Ocean Research"
+  - "Applied Sciences"
+  - "Earth"
+  - "Fluids"
+  - "Journal of Zhejiang University–Science A"
+  - "Sustainability"
