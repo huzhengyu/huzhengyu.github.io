@@ -1,7 +1,7 @@
 ---
 title: "Undergraduate Teaching Assistant AY2022/2023/2024"
 collection: teaching
-type: "Final Yearl Project"
+type: "Final Year Project supervision"
 permalink: /teaching/2024-teaching
 venue: "Civil and Environmental Engineering, National University of Singapore"
 date: 2024-09-01

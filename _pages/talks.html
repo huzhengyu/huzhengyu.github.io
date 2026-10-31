@@ -1,16 +1,27 @@
 ---
 layout: archive
-title: "Talks and presentations"
+title: "Talks & presentations"
 permalink: /talks/
 author_profile: true
+excerpt: "Conference talks and invited presentations by Zhengyu Hu."
 ---
 
-{% if site.talkmap_link == true %}
+{% assign talks = site.talks | sort: "date" | reverse %}
+<p class="page__lead">{{ talks.size }} conference talks and presentations.</p>
 
-<p style="text-decoration:underline;"><a href="/talkmap.html">See a map of all the places I've given a talk!</a></p>
-
-{% endif %}
-
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
+{% assign by_year = talks | group_by_exp: "t", "t.date | date: '%Y'" %}
+{% for year in by_year %}
+<h2 class="year-heading">{{ year.name }}</h2>
+<ol class="timeline">
+  {% for post in year.items %}
+  <li class="timeline__item">
+    <a class="timeline__thumb" href="{{ site.baseurl }}{{ post.url }}" tabindex="-1" aria-hidden="true">{% if post.image %}<img src="{{ site.baseurl }}/images/{{ post.image }}" alt="" loading="lazy">{% endif %}</a>
+    <div class="timeline__body">
+      <p class="timeline__meta"><time datetime="{{ post.date | date_to_xmlschema }}">{{ post.date | date: "%-d %b %Y" }}</time> · {{ post.venue }}, {{ post.location }}</p>
+      <h3 class="timeline__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+      {% for t in post.talk_titles %}<p class="timeline__talk">“{{ t }}”</p>{% endfor %}
+    </div>
+  </li>
+  {% endfor %}
+</ol>
 {% endfor %}

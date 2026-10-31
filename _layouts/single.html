@@ -17,7 +17,7 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <article class="page" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="page" itemscope itemtype="https://schema.org/CreativeWork">
     {% if page.title %}<meta itemprop="headline" content="{{ page.title | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.excerpt %}<meta itemprop="description" content="{{ page.excerpt | markdownify | strip_html | strip_newlines | escape_once }}">{% endif %}
     {% if page.date %}<meta itemprop="datePublished" content="{{ page.date | date: "%B %d, %Y" }}">{% endif %}
@@ -25,31 +25,29 @@ layout: default
 
     <div class="page__inner-wrap">
       {% unless page.header.overlay_color or page.header.overlay_image %}
+        {% unless page.hide_title %}
         <header>
           {% if page.title %}<h1 class="page__title" itemprop="headline">{{ page.title | markdownify | remove: "<p>" | remove: "</p>" }}</h1>{% endif %}
-          {% if page.read_time %}
-            <p class="page__meta"><i class="fa fa-clock-o" aria-hidden="true"></i> {% include read-time.html %}</p>
+          {% if page.collection == 'publications' %}
+            {% assign hl = site.author_highlight | default: "Hu, Z." %}
+            {% capture hl_html %}<strong class="pub__me">{{ hl }}</strong>{% endcapture %}
+            {% if page.authors %}<p class="pub__authors">{{ page.authors | replace: hl, hl_html }}</p>{% endif %}
+            <p class="pub__venue"><em>{{ page.venue }}</em>{% if page.details and page.details != '' %}, {{ page.details }}{% endif %} <span class="pub__year">{{ page.date | date: "%Y" }}</span></p>
+            <p class="pub__links">
+              {% if page.paperurl %}<a class="tag-btn" href="{{ page.paperurl }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>{% endif %}
+              {% if page.pdf and page.pdf != '' %}<a class="tag-btn" href="{% if page.pdf contains '://' %}{{ page.pdf }}{% else %}{{ site.baseurl }}{{ page.pdf }}{% endif %}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
+              {% if page.citation %}<button class="tag-btn js-cite" type="button" data-cite="{{ page.citation | strip_html | escape }}"><i class="fas fa-quote-right" aria-hidden="true"></i> Cite</button>{% endif %}
+            </p>
+            {% if page.excerpt %}<div class="pub__abstract"><h2>Summary</h2>{{ page.excerpt | markdownify }}</div>{% endif %}
+          {% elsif page.collection == 'talks' %}
+            <p class="timeline__meta"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ page.date | date: "%-d %B %Y" }} &nbsp;·&nbsp; <i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ page.venue }}, {{ page.location }}</p>
+            {% for t in page.talk_titles %}<p class="timeline__talk">“{{ t }}”</p>{% endfor %}
+            {% if page.link_paper %}<p class="pub__links"><a class="tag-btn" href="{{ page.link_paper }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> Conference paper</a></p>{% endif %}
+          {% elsif page.collection == 'teaching' %}
+            <p class="teach__meta"><span class="badge">{{ page.type }}</span> {{ page.venue }}</p>
           {% endif %}
-        {% if page.modified %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.modified | date: "%Y-%m-%d" }}">{{ page.modified | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-        
-        {% if page.collection == 'teaching' %}
-          <p> {{ page.type }}, <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.venue and page.date %}
-          <p>Published in <i>{{ page.venue }}</i>, {{ page.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif page.date %}
-          <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
-        {% endif %}
-        
-             
-        {% if page.citation and page.paperurl %}
-          <p>Recommended citation: {{ page.citation }} <a href="{{ page.paperurl }}"><u>{{ page.paperurl }}</u></a></p>
-        {% elsif page.citation %}
-          <p>Recommended citation: {{ page.citation }} </p>
-        {% endif %}
-    
         </header>
+        {% endunless %}
       {% endunless %}
 
       <section class="page__content" itemprop="text">
@@ -57,16 +55,8 @@ layout: default
         {% if page.link %}<div><a href="{{ page.link }}" class="btn">{{ site.data.ui-text[site.locale].ext_link_label | default: "Direct Link" }}</a></div>{% endif %}
       </section>
 
-      <footer class="page__meta">
-        {% if site.data.ui-text[site.locale].meta_label %}
-          <h4 class="page__meta-title">{{ site.data.ui-text[site.locale].meta_label }}</h4>
-        {% endif %}
-        {% include page__taxonomy.html %}
-      </footer>
 
-      {% if page.share %}{% include social-share.html %}{% endif %}
 
-      {% include post_pagination.html %}
     </div>
 
     {% if site.comments.provider and page.comments %}

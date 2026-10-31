@@ -1,5 +1,1 @@
-{% if site.url %}
-  {% assign base_path = site.url | append: site.baseurl %}
-{% else %}
-  {% assign base_path = site.github.url %}
-{% endif %}
+{% comment %}Root-relative links work on the live site, in local preview and in Codespaces.{% endcomment %}{% assign base_path = site.baseurl %}

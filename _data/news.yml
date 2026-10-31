@@ -1,0 +1,14 @@
+# News items shown on the home page (newest first).
+# Each item: date (YYYY-MM-DD) and text (Markdown allowed). Only the first 6 are shown.
+- date: 2026-07-25
+  text: 'New paper in *Communications Earth & Environment*: [Sediment rheology governs wave damping over muddy shelves](https://doi.org/10.1038/s43247-026-03886-1).'
+- date: 2026-06-07
+  text: 'Presented work on hydroelastic plate response to multimodal breaking wave impacts at [OMAE 2026](/talks/OMAE2026) in Tokyo.'
+- date: 2025-11-04
+  text: 'Talk on full-scale tsunami scour with 3D seepage flows at the [12th International Conference on Scour and Erosion](/talks/ICSE2025), Chongqing.'
+- date: 2025-06-23
+  text: 'Presented at the [41st IAHR World Congress](/talks/IAHR2025) in Singapore.'
+- date: 2025-06-20
+  text: 'New paper in *Journal of Fluid Mechanics*: [Breaking wave impacts on an elastic plate](https://doi.org/10.1017/jfm.2025.10397).'
+- date: 2025-03-22
+  text: 'New paper in *JGR: Oceans* on the role of dynamic seepage response in tsunami-induced scour.'

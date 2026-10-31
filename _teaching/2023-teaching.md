@@ -11,7 +11,7 @@ location: "Singapore"
 I worked with Prof. <a href="https://nus-ccl.com/">Yuzhu (Pearl) Li</a> to give lab tutorials to about 20 graduate students.
 
 * Incipient Sediment Motion
-<div align=center><img src="http://huzhengyu.github.io/images/IncipientSedimentMotion.jpg" width = 400></div>
+<div class="img-single img-single--sm"><img src="{{ site.baseurl }}/images/IncipientSedimentMotion.jpg" alt="" loading="lazy"></div>
 
 * Sand Ripples
-<div align=center><img src="http://huzhengyu.github.io/images/SandRipples.jpg" width = 400></div>
+<div class="img-single img-single--sm"><img src="{{ site.baseurl }}/images/SandRipples.jpg" alt="" loading="lazy"></div>

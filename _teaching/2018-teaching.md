@@ -1,7 +1,7 @@
 ---
 title: "Undergraduate Teaching Assistant AY2019/2020"
 collection: teaching
-type: "Final Yearl Project"
+type: "Final Year Project supervision"
 permalink: /teaching/2018-teaching
 venue: "Ocean college, Zhejiang University"
 date: 2018-09-01

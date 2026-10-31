@@ -1,12 +1,18 @@
 ---
 layout: archive
-title: "Teaching"
+title: "Teaching & mentoring"
 permalink: /teaching/
 author_profile: true
+excerpt: "Teaching assistant roles and student project supervision by Zhengyu Hu at NUS and Zhejiang University."
 ---
 
-{% include base_path %}
-
-{% for post in site.teaching reversed %}
-  {% include archive-single.html %}
+{% assign items = site.teaching | sort: "date" | reverse %}
+<div class="teach-list">
+{% for post in items %}
+  <article class="teach">
+    <p class="teach__meta"><span class="badge">{{ post.type }}</span> {{ post.venue }}</p>
+    <h3 class="teach__title"><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h3>
+    <div class="teach__excerpt">{{ post.content }}</div>
+  </article>
 {% endfor %}
+</div>

@@ -1,0 +1,29 @@
+{% comment %}
+  Publication card. Pass the publication as `pub`, e.g. {% include pub-card.html pub=post %}
+{% endcomment %}
+{% assign pub = include.pub %}
+{% assign hl = site.author_highlight | default: "Hu, Z." %}
+{% capture hl_html %}<strong class="pub__me">{{ hl }}</strong>{% endcapture %}
+<article class="pub" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <a class="pub__thumb{% unless pub.image and pub.image != '' %} pub__thumb--empty{% endunless %}" href="{{ site.baseurl }}{{ pub.url }}" tabindex="-1" aria-hidden="true">
+    {% if pub.image and pub.image != '' %}
+      <img src="{{ site.baseurl }}/images/{{ pub.image }}" alt="" loading="lazy">
+    {% else %}
+      <i class="fas fa-water" aria-hidden="true"></i>
+    {% endif %}
+  </a>
+  <div class="pub__body">
+    <h3 class="pub__title" itemprop="headline"><a href="{{ site.baseurl }}{{ pub.url }}">{{ pub.title }}</a></h3>
+    {% if pub.authors %}<p class="pub__authors" itemprop="author">{{ pub.authors | replace: hl, hl_html }}</p>{% endif %}
+    <p class="pub__venue">
+      <em itemprop="isPartOf">{{ pub.venue }}</em>{% if pub.details and pub.details != '' %}, {{ pub.details }}{% endif %}
+      <span class="pub__year">{{ pub.date | date: "%Y" }}</span>
+    </p>
+    <p class="pub__links">
+      {% if pub.paperurl %}<a class="tag-btn" href="{{ pub.paperurl }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>{% endif %}
+      {% if pub.pdf and pub.pdf != '' %}<a class="tag-btn" href="{% if pub.pdf contains '://' %}{{ pub.pdf }}{% else %}{{ site.baseurl }}{{ pub.pdf }}{% endif %}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
+      {% if pub.citation %}<button class="tag-btn js-cite" type="button" data-cite="{{ pub.citation | strip_html | escape }}"><i class="fas fa-quote-right" aria-hidden="true"></i> Cite</button>{% endif %}
+      {% unless include.compact %}<a class="tag-btn tag-btn--ghost" href="{{ site.baseurl }}{{ pub.url }}">Abstract</a>{% endunless %}
+    </p>
+  </div>
+</article>
