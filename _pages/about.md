@@ -11,21 +11,18 @@ redirect_from:
 ---
 
 <section class="intro">
-  <p class="intro__eyebrow">Postdoctoral Research Fellow · National University of Singapore</p>
+  <p class="intro__eyebrow">Coastal Engineering · National University of Singapore</p>
   <h1 class="intro__name">Zhengyu Hu</h1>
-  <p class="intro__lead">I study how waves, structures and the seabed interact, using high-fidelity multiphysics simulations and laboratory experiments to make coastal infrastructure safer and more sustainable.</p>
+  <div class="intro__lead">
+    <p>I am a Postdoctoral Research Fellow in the Department of Civil and Environmental Engineering at the National University of Singapore (NUS), where I received my Ph.D. in Coastal Engineering in 2025.</p>
+    <p>My research focuses on understanding and predicting complex coastal processes through advanced computational and experimental approaches. My current interests include multiphysics modeling of coastal systems, nature-based coastal protection, wave–mud interactions, and physics-informed computational methods for next-generation coastal engineering.</p>
+  </div>
   <p class="intro__actions">
     <a class="btn btn--primary" href="{{ site.baseurl }}/cv/"><i class="fas fa-file-alt" aria-hidden="true"></i> CV</a>
     <a class="btn btn--light" href="{{ site.baseurl }}/publications/"><i class="fas fa-book" aria-hidden="true"></i> Publications</a>
     <a class="btn btn--light" href="mailto:{{ site.author.email }}"><i class="fas fa-envelope" aria-hidden="true"></i> Contact</a>
   </p>
 </section>
-
-## About
-
-Dr. Zhengyu Hu is a Postdoctoral Research Fellow in the Department of Civil and Environmental Engineering at the National University of Singapore (NUS). He received his Ph.D. in Coastal Engineering from NUS in 2025.
-
-His research focuses on understanding and predicting complex coastal processes through advanced computational and experimental approaches. His current research interests include multiphysics modeling of coastal systems, nature-based coastal protection, wave–mud interactions, and physics-informed computational methods for next-generation coastal engineering.
 
 ## Research interests
 

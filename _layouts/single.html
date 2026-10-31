@@ -32,13 +32,15 @@ layout: default
             {% assign hl = site.author_highlight | default: "Hu, Z." %}
             {% capture hl_html %}<strong class="pub__me">{{ hl }}</strong>{% endcapture %}
             {% if page.authors %}<p class="pub__authors">{{ page.authors | replace: hl, hl_html }}</p>{% endif %}
-            <p class="pub__venue"><em>{{ page.venue }}</em>{% if page.details and page.details != '' %}, {{ page.details }}{% endif %} <span class="pub__year">{{ page.date | date: "%Y" }}</span></p>
+            <p class="pub__venue"><em>{{ page.venue }}</em>{% if page.volume and page.volume != '' %}, {{ page.volume }}{% endif %}{% if page.pages and page.pages != '' %}, {{ page.pages }}{% endif %} <span class="pub__year">{{ page.date | date: "%Y" }}</span></p>
             <p class="pub__links">
               {% if page.paperurl %}<a class="tag-btn" href="{{ page.paperurl }}" target="_blank" rel="noopener"><i class="fas fa-external-link-alt" aria-hidden="true"></i> DOI</a>{% endif %}
               {% if page.pdf and page.pdf != '' %}<a class="tag-btn" href="{% if page.pdf contains '://' %}{{ page.pdf }}{% else %}{{ site.baseurl }}{{ page.pdf }}{% endif %}" target="_blank" rel="noopener"><i class="fas fa-file-pdf" aria-hidden="true"></i> PDF</a>{% endif %}
-              {% if page.citation %}<button class="tag-btn js-cite" type="button" data-cite="{{ page.citation | strip_html | escape }}"><i class="fas fa-quote-right" aria-hidden="true"></i> Cite</button>{% endif %}
+              {% if page.citation %}{% include cite-button.html pub=page %}{% endif %}
             </p>
-            {% if page.excerpt %}<div class="pub__abstract"><h2>Summary</h2>{{ page.excerpt | markdownify }}</div>{% endif %}
+            {% if page.image and page.image != '' %}<figure class="pub__ga">{% include pub-media.html pub=page %}<figcaption>Graphical abstract</figcaption></figure>{% endif %}
+            {% if page.abstract and page.abstract != '' %}<div class="pub__abstract"><h2>Abstract</h2><p>{{ page.abstract }}</p></div>
+            {% elsif page.excerpt %}<div class="pub__abstract"><h2>Summary</h2>{{ page.excerpt | markdownify }}</div>{% endif %}
           {% elsif page.collection == 'talks' %}
             <p class="timeline__meta"><i class="fas fa-calendar-alt" aria-hidden="true"></i> {{ page.date | date: "%-d %B %Y" }} &nbsp;·&nbsp; <i class="fas fa-map-marker-alt" aria-hidden="true"></i> {{ page.venue }}, {{ page.location }}</p>
             {% for t in page.talk_titles %}<p class="timeline__talk">“{{ t }}”</p>{% endfor %}

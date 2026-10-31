@@ -3,22 +3,4 @@
 {% include analytics.html %}
 {% include /comments-providers/scripts.html %}
 
-<script>
-  // "Cite" buttons: copy the citation text to the clipboard
-  document.addEventListener('click', function (e) {
-    var btn = e.target.closest && e.target.closest('.js-cite');
-    if (!btn) return;
-    var text = btn.getAttribute('data-cite');
-    var done = function () {
-      var old = btn.innerHTML;
-      btn.classList.add('is-copied');
-      btn.innerHTML = '<i class="fas fa-check" aria-hidden="true"></i> Copied';
-      setTimeout(function () { btn.classList.remove('is-copied'); btn.innerHTML = old; }, 1800);
-    };
-    if (navigator.clipboard && window.isSecureContext) {
-      navigator.clipboard.writeText(text).then(done, function () { window.prompt('Copy citation:', text); });
-    } else {
-      window.prompt('Copy citation:', text);
-    }
-  });
-</script>
+<script src="{{ base_path }}/assets/js/site.js" defer></script>

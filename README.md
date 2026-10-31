@@ -64,15 +64,38 @@ Copy an existing file in `_publications/` (e.g. `2025JFM.md`), rename it, and ed
 title: 'Paper title'
 date: 2026-01-31           # controls ordering and the year heading
 venue: 'Journal name'
+volume: '200'
+pages: '104999'            # article number or page range
 authors: 'Hu, Z., Smith, J., Li, Y.P.'   # "Hu, Z." is bolded automatically
-details: '200, 104999'     # volume, article no.
 paperurl: 'https://doi.org/...'
 pdf: '/files/2026XX.pdf'   # local file in /files/ or a full URL
-image: '2026XX.jpg'        # thumbnail in /images/ (optional)
+image: '2026XX.jpg'        # still graphical abstract / poster frame in /images/
+animation: '2026XX.mp4'    # optional looping animation in /images/ (see below)
 selected: true             # also show under "Selected publications" on the home page
-excerpt: 'One-sentence summary.'
-citation: 'Full citation text used by the Cite button.'
+excerpt: 'One-sentence summary (used on cards and for search engines).'
+citation: 'Full citation text shown by the Cite button.'
+abstract: >-
+  Paste the published abstract here as one paragraph, indented by two spaces.
 ```
+
+The **Cite** button builds the BibTeX entry automatically from these fields.
+
+### Graphical-abstract animations
+
+Animations are short **muted, looping MP4s**, not GIFs. They look the same as a GIF on the page
+(autoplay, loop, no controls) but are about 10–20× smaller: the JFM animation is 0.8 MB as MP4 and 14 MB as a GIF.
+They only load and play when scrolled into view, and they respect the "reduce motion" setting in the visitor's operating system.
+
+To convert a simulation video (install [ffmpeg](https://www.gyan.dev/ffmpeg/builds/) first):
+
+```powershell
+# animation (1000 px wide, 24 fps, no audio, sped up 1.5x; use setpts=PTS/1 for normal speed)
+ffmpeg -i "my video.avi" -an -vf "setpts=PTS/1.5,fps=24,scale=1000:-2,format=yuv420p" -c:v libx264 -preset veryfast -crf 28 -movflags +faststart images/2026XX.mp4
+# poster frame (still shown before playback and in link previews), taken 8 s in
+ffmpeg -ss 8 -i images/2026XX.mp4 -frames:v 1 -q:v 4 images/2026XX-poster.jpg
+```
+
+Then set `animation: '2026XX.mp4'` and `image: '2026XX-poster.jpg'`.
 
 ### Adding a talk
 

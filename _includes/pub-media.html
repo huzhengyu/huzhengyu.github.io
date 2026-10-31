@@ -1,0 +1,14 @@
+{% comment %}
+  Graphical abstract: looping muted MP4 ("GIF-style") if `animation` is set, otherwise the still `image`.
+  Usage: {% include pub-media.html pub=post %}
+{% endcomment %}
+{% assign m = include.pub %}
+{% if m.animation and m.animation != '' %}
+  <video class="js-autoplay" muted loop playsinline preload="none"
+         {% if m.image and m.image != '' %}poster="{{ site.baseurl }}/images/{{ m.image }}"{% endif %}
+         aria-label="Graphical abstract animation: {{ m.title | escape }}">
+    <source data-src="{{ site.baseurl }}/images/{{ m.animation }}" type="video/mp4">
+  </video>
+{% elsif m.image and m.image != '' %}
+  <img src="{{ site.baseurl }}/images/{{ m.image }}" alt="Graphical abstract: {{ m.title | escape }}" loading="lazy">
+{% endif %}

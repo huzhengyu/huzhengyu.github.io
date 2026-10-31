@@ -1,0 +1,9 @@
+{% assign c = include.pub %}<button class="tag-btn js-cite" type="button"
+  data-cite="{{ c.citation | strip_html | escape }}"
+  data-title="{{ c.title | escape }}"
+  data-authors="{{ c.authors | escape }}"
+  data-journal="{{ c.venue | escape }}"
+  data-year="{{ c.date | date: '%Y' }}"
+  data-volume="{{ c.volume }}"
+  data-pages="{{ c.pages }}"
+  data-doi="{{ c.paperurl | remove: 'https://doi.org/' | remove: 'http://doi.org/' }}"><i class="fas fa-quote-right" aria-hidden="true"></i> Cite</button>
