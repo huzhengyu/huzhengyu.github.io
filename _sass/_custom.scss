@@ -314,3 +314,10 @@ ul.journal-list { list-style: none; margin: 0; padding: 0; display: flex; flex-w
   .teach__imgs { max-width: 360px; }
 }
 .teach__imgs--1 img { object-position: 50% 25%; }
+
+/* real brand logos and colours in the sidebar */
+.author__urls i.brand { font-size: 1.1em; }
+.author__urls i.brand--gs { color: #4285F4; }
+.author__urls i.brand--rg { color: #00CCBB; }
+.author__urls i.brand--orcid { color: #A6CE39; }
+.author__urls i.brand--li { color: #0A66C2; }
