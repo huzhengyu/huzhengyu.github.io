@@ -24,24 +24,26 @@ redirect_from:
 
 <div class="cv-grid" markdown="0">
   <section>
-    <h3>Education</h3>
-    <ul>
-      <li><strong>Ph.D., Coastal Engineering</strong><br>National University of Singapore · 2021–2025</li>
-      <li><strong>M.Eng., Port, Coastal &amp; Offshore Engineering</strong><br>Zhejiang University · 2018–2021</li>
-    </ul>
-  </section>
-  <section>
     <h3>Experience</h3>
     <ul>
-      <li><strong>Research Fellow</strong><br>National University of Singapore · 2024–present<br><span class="muted">with Prof. <a href="https://nus-ccl.com/">Yuzhu (Pearl) Li</a></span></li>
+      <li><strong>Research Fellow, Project Manager</strong><br>National University of Singapore · Oct 2024–present<br><span class="muted">Managing an SGD 2.5 million National Research Foundation project on climate-driven coastal hazards and protection</span></li>
     </ul>
   </section>
   <section>
-    <h3>Methods</h3>
+    <h3>Education</h3>
     <ul>
-      <li>Computational fluid dynamics</li>
-      <li>Computational solid mechanics</li>
-      <li>Experimental fluid dynamics</li>
+      <li><strong>Ph.D. in Civil Engineering</strong><br>National University of Singapore · 2021–2025<br><span class="muted">Advisor: Asst. Prof. <a href="https://nus-ccl.com/">Yuzhu Pearl Li</a></span></li>
+      <li><strong>M.Eng. in Civil Engineering</strong><br>Zhejiang University · 2018–2021</li>
+    </ul>
+  </section>
+  <section>
+    <h3>Research interests</h3>
+    <ul>
+      <li>Coupled ocean and coastal processes</li>
+      <li>Wave–structure–seabed interactions and coastal hazards</li>
+      <li>Breaking-wave impacts and hydroelasticity</li>
+      <li>Sediment transport, scour, and coastal morphodynamics</li>
+      <li>Sustainable, nature-based, and hybrid coastal protection</li>
     </ul>
   </section>
 </div>

@@ -14,8 +14,7 @@ redirect_from:
   <p class="intro__eyebrow">Coastal Engineering · National University of Singapore</p>
   <h1 class="intro__name">Zhengyu Hu</h1>
   <div class="intro__lead">
-    <p>I am a Postdoctoral Research Fellow in the Department of Civil and Environmental Engineering at the National University of Singapore (NUS), where I received my Ph.D. in Coastal Engineering in 2025.</p>
-    <p>My research focuses on understanding and predicting complex coastal processes through advanced computational and experimental approaches. My current interests include multiphysics modeling of coastal systems, nature-based coastal protection, wave–mud interactions, and physics-informed computational methods for next-generation coastal engineering.</p>
+    <p>I am a Postdoctoral Research Fellow in the Department of Civil and Environmental Engineering at the National University of Singapore (NUS), where I received my Ph.D. in Civil Engineering in 2025. My research focuses on understanding and predicting complex coastal processes through advanced computational and experimental approaches. My current interests include multiphysics modeling of coastal systems, nature-based coastal protection, wave–mud interactions, and physics-informed computational methods for next-generation coastal engineering.</p>
   </div>
   <p class="intro__actions">
     <a class="btn btn--primary" href="{{ site.baseurl }}/cv/"><i class="fas fa-file-alt" aria-hidden="true"></i> CV</a>
@@ -38,7 +37,7 @@ redirect_from:
 ## News
 
 <ul class="news">
-{% for item in site.data.news limit: 6 %}
+{% for item in site.data.news limit: 8 %}
   <li><time datetime="{{ item.date | date_to_xmlschema }}">{{ item.date | date: "%b %Y" }}</time><span>{{ item.text | markdownify | remove: '<p>' | remove: '</p>' }}</span></li>
 {% endfor %}
 </ul>

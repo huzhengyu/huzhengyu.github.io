@@ -289,3 +289,12 @@ ol.awards { list-style: none; margin: 1em 0 2em; padding: 0; }
 ul.journal-list { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: .5em;
   li { margin: 0; padding: .35em .8em; border-radius: 999px; background: $accent-soft; color: $text-color; font-size: .85em; font-style: italic; }
 }
+.award { grid-template-columns: 7em 1fr auto; align-items: start; }
+.award__img { display: block; width: 260px; aspect-ratio: 16 / 10; border-radius: 6px; overflow: hidden; border: 1px solid $card-border; background: #fff;
+  img { width: 100%; height: 100%; object-fit: cover; display: block; transition: transform .3s ease; }
+  &:hover img { transform: scale(1.04); }
+}
+@media (max-width: 600px) {
+  .award { grid-template-columns: 1fr; }
+  .award__img { width: 100%; max-width: 360px; margin-top: .5em; }
+}
