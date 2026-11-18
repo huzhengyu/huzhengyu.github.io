@@ -18,7 +18,7 @@
     var f = [
       ['title', '{' + d.title + '}'],
       ['author', authors.join(' and ')],
-      ['journal', d.journal],
+      ['journal', (d.journal || '').replace(/&/g, '\\&')],
       ['year', d.year],
       ['volume', d.volume],
       ['pages', d.pages],
